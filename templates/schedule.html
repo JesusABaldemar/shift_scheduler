@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
+    <meta charset="UTF-8">
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            width: 80px;
+            height: 25px;
+            text-align: center;
+        }
+
+        .available {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Schedule for {{.Username}}</h1>
+    <h2>Total time Monday: {{.MondayTime}} hours</h2>
+    <h2>Total time Tuesday: {{.TuesdayTime}} hours</h2>
+    <h2>Total time Wednesday: {{.WednesdayTime}} hours</h2>
+    <h2>Total time Thursday: {{.ThursdayTime}} hours</h2>
+    <h2>Total time Friday: {{.FridayTime}} hours</h2>
+    <h2>Total time Week: {{.WeeklyTime}} hours</h2>
+    <table>
+        <tr>
+            <th>Slot</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <div id="schedule-container">
+            {{.Table}}
+        </div>
+    </table>
+</body>
+</html>

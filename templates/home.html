@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <h1>Welcome to Shift Scheduler</h1>
+    <h1>Please sign in to view your schedule.</h1>
+    <h2>Register</h2>
+<form action="/signin" method="post">Username:</label>
+    <input
+        type="text"
+        id="register-username"
+        name="username"
+        required>
+
+    <br>
+
+    <label for="register-password">Password:</label>
+    <input
+        type="password"
+        id="register-password"
+        name="password"
+        required>
+    <br>
+    <button type="submit">Register</button>
+</form>
+<h2>Login</h2>
+<form action="/login" method="post">
+    <label for="login-username">Username:</label>
+    <input
+        type="text"
+        id="login-username"
+        name="username"
+        required
+    >
+
+    <br>
+
+    <label for="login-password">Password:</label>
+    <input
+        type="password"
+        id="login-password"
+        name="password"
+        required
+    >
+
+    <br>
+
+    <button type="submit">Login</button>
+</form>
+</html>
