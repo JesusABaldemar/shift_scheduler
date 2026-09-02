@@ -32,6 +32,9 @@ func main(){
 	mux.HandleFunc("POST /signin", signIn)
 	mux.HandleFunc("POST /login", logIn)
 	mux.HandleFunc("GET /schedule", schedule)
+	mux.HandleFunc("POST /select-start", selectStart)
+	mux.HandleFunc("POST /select-end", selectEnd)
+	mux.HandleFunc("POST /approval", approvingSchedules)
 
 	log.Print("Starting server on :4000")
 

@@ -29,6 +29,8 @@
     <h2>Total time Thursday: {{.ThursdayTime}} hours</h2>
     <h2>Total time Friday: {{.FridayTime}} hours</h2>
     <h2>Total time Week: {{.WeeklyTime}} hours</h2>
+    <h2>Approval status: {{.Approval}}</h2>
+    <div id="schedule-container">
     <table>
         <tr>
             <th>Slot</th>
@@ -38,9 +40,9 @@
             <th>Thursday</th>
             <th>Friday</th>
         </tr>
-        <div id="schedule-container">
-            {{.Table}}
-        </div>
+        {{.Table}}
     </table>
+    <button hx-post="approval">More</button>
+</div>
 </body>
 </html>
